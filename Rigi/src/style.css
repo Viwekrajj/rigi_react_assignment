@@ -1,0 +1,111 @@
+.video-grid{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+
+
+}
+.app{
+    background-color: #212121;
+}
+
+.video-player{
+    position: absolute;
+    bottom:20px;
+    /* width:100%; */
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.video-controler{
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.playlist-view{
+    height: 600px;
+    
+}
+.playButton{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.video-description{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.speed-selector {
+    position: relative;
+  }
+  
+  .icon-container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: absolute;
+    /* top: 100%; */
+    left: -70px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 5px 0;
+    min-width: 100px;
+  }
+  
+  .option {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .option:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .selected-speed {
+    margin-top: 10px;
+  }
+  .defaultStyle{
+    color:  #fff;;
+
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .video-grid {
+      height: 300px; /* Adjust height for smaller screens */
+    }
+  
+    .video-player {
+      bottom: 10px; /* Adjust bottom position for smaller screens */
+    }
+  
+    .video-description {
+      font-size: 12px; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .video-controler {
+      flex-direction: column; /* Stack controls vertically for smaller screens */
+    }
+  
+    .video-controler span {
+      margin-bottom: 10px; /* Add spacing between control elements */
+    }
+  
+    .playlist-view {
+      height: auto; /* Adjust height to fit playlist content */
+    }
+  }
+
+  
