@@ -15,11 +15,18 @@ And, run the development server:
 npm start
 ```
 
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Deployed Version
+## Deployment
 
-And here's the deployed version: https://ephemeral-kangaroo-a11665.netlify.app
+Generate build:
+
+```bash
+npm run build
+```
+
+[View Demo](https://ephemeral-kangaroo-a11665.netlify.app)
 
 ## Features the app provides
 - Playback Controls: Easily play, pause, skip forward, and skip backward through video content.
