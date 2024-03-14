@@ -1,9 +1,8 @@
 // App.js
-import React from "react";
-import VideoPlayer from "./VideoPlayer";
-import Playlist from "./Playlist";
 import "./style.css";
-import { PlaylistProvider } from "./usePlaylist";
+import React from "react";
+import { VideoPlayer, Playlist } from "./Component";
+import { PlaylistProvider } from "./hooks/usePlaylist";
 
 const App = () => {
   return (
@@ -12,14 +11,13 @@ const App = () => {
         <h1 className=" my-3">React Video Player</h1>
         <div className="row">
           <div className="col-md-9">
-          <VideoPlayer />
+            <VideoPlayer />
           </div>
           <div className="col-md-3 playlist-view overflow-auto">
-          <Playlist />
+            <Playlist />
           </div>
         </div>
       </div>
-
     </PlaylistProvider>
   );
 };

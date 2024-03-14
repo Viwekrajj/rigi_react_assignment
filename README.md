@@ -1,56 +1,56 @@
-This is a  assignment given by Rigi i.e Azalp Technologies Private Limited
-Tech Stack : Next.js & styled components
+This is a  assignment given by `Rigi` i.e `Azalp Technologies Private Limited`
+
+Tech Stack : `React` + `Bootstrap`
 
 ## Run Project Locally
 First, install packages:
 
-```bash
-yarn install
+```
+npm install
 ```
 
 And, run the development server:
 
 ```bash
-yarn dev
+npm start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Deployed Version
 
-And here's the deployed version: https://rigi-assignment-player.vercel.app
+And here's the deployed version: https://ephemeral-kangaroo-a11665.netlify.app
 
 ## Features the app provides
 - Playback Controls: Easily play, pause, skip forward, and skip backward through video content.
 - Volume Control: Adjust the volume level using a slider or toggle mute/unmute with a single click.
 - Time Tracking: Display the current playback time and total duration of the video, allowing users to track their progress.
 - Playback Speed: Change the playback speed of the video to suit individual preferences, offering options such as 0.5x, 1x, 1.5x, and 2x.
--Full Screen Mode: Enable full-screen mode for an immersive viewing experience, maximizing the video display area.
--Picture-in-Picture: Enable picture-in-picture mode, allowing users to watch the video in a small overlay window while navigating other content or applications.
--Keyboard Shortcuts: Provides keyboard shortcuts for common actions like play/pause, volume adjustment, and navigation, enhancing accessibility and user experience.
--Playlist Navigation: Allows users to navigate through a playlist of videos, with options to play the next or previous video.
--Responsive Design: The app is designed to adapt to various screen sizes and orientations, ensuring optimal viewing and usability across devices.
--Drag and Drop Playlist: Users can rearrange the playlist items by dragging and dropping, providing flexibility in organizing their video queue.
+- Full Screen Mode: Enable full-screen mode for an immersive viewing experience, maximizing the video display area.
+- Picture-in-Picture: Enable picture-in-picture mode, allowing users to watch the video in a small overlay window while navigating other content or applications.
+- Keyboard Shortcuts: Provides keyboard shortcuts for common actions like play/pause, volume adjustment, and navigation, enhancing accessibility and user experience.
+- Playlist Navigation: Allows users to navigate through a playlist of videos, with options to play the next or previous video.
+- Responsive Design: The app is designed to adapt to various screen sizes and orientations, ensuring optimal viewing and usability across devices.
+- Drag and Drop Playlist: Users can rearrange the playlist items by dragging and dropping, providing flexibility in organizing their video queue.
 
  ## File System
   
-  inside components folder
+  Inside `Component` folder
 
- -player.js: exporting Player component and related features
- -playlist.js : exporting Playlist component and related features
- -home.js: HomePage, importing Player and Playlist component to export them together
+ - `VideoPlayer.js`: The actual VideoPlayer component
+ - `Playlist.js`: The playlist component that appears as side widget.
+ - `VideoControls/index.js` and `VideoProgressBar/index.js`: Basic `video` controls components. 
 
- inside app folder 
- -page.js : Calling Home component and context provider to provide context
- -store.js : Code for react context (store management) and exporting relevant modules
+ Inside `src` folder:
+ - `App.js`: Renders as the `root`. All other components have been consumed here.
 
  ## Lighthouse Score
 
- -Performance: 93
- -Accessbility: 97
- -Best Practices: 100
- -SEO: 100
+ - Performance: 94
+ - Accessibility: 85
+ - Best Practices: 81
+ - SEO: 91
  
- ![lighthouse result img](https://i.postimg.cc/VLbDJH66/Screenshot-2024-02-18-184246.png)
+ ![lighthouse result img](https://i.postimg.cc/tCY0bBvL/Screenshot-2024-03-14-at-11-54-49-PM.png)
 
 Thanks
